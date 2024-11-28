@@ -1,0 +1,373 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Set the background image for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/89/177/75/artistic-minimalism-black-and-white-minimalist-wallpaper-preview.jpg'); /* Replace with your image path */
+    background-size: cover;       /* Ensures the image covers the entire page */
+    background-position: center;  /* Centers the background image */
+    background-attachment: fixed; /* Keeps the image fixed on scroll */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white;
+}
+
+/* Styling for the content on top of the background */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: (0, 0, 0, 0.6); /* Adds a semi-transparent overlay for readability */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+  }
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    padding-right: 30rem;
+}
+
+.navbar nav ul li {
+    margin-left: 60px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.navbar nav ul :hover{
+    color: white;
+    animation: shake 2s; 
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section {
+    width: 300px;
+    padding: 20px;
+}
+
+.designer h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.coder h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.designer p, .coder p {
+    color: #666;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+
+.profile-image {
+    position: relative;
+    width: 500px;
+    height: 500px; 
+}
+
+.imggroup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(.5%);
+    transition: bottom 1s, left 2s,right 2s;
+    
+}
+
+#shape {
+    z-index: 1; 
+}
+
+#man {
+    z-index: 2;
+}
+
+.profile-image:hover #man{
+    left: 70px;
+    right: 70px;
+    }
+
+
+#about {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1c;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-img img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin-right: 40px;
+}
+
+.about-details p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #ccc;
+    margin: 10px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    color: #000000;
+    padding-left: 10px;
+}
+
+.info-box i {
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.info-box span {
+    color: #e0e0e0;
+}
+
+/* Skills Section Style */
+#about1 {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 2.7em;
+    color: rgb(44, 41, 41);
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: l;
+}
+
+.heading h2 {
+    font-size: 1.7em;
+    color: grey;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-box {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills-box h4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+    color: white;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.bar {
+    position: relative;
+    height: 10px;
+    background-color: #3c3c3c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Individual Skill Progress */
+.bar-html::before,
+.bar-cs::before,
+.bar-js::before,
+.bar-react::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.bar-html::before {
+    width: 95%;
+    background-color: white;
+}
+
+.bar-cs::before {
+    width: 88%;
+    background-color: white;
+}
+
+.bar-js::before {
+    width: 89%;
+    background-color: white;
+}
+
+.bar-react::before {
+    width: 83%;
+    background-color: white;
+}
+
+.skills-box:hover {
+    
+    animation: shake 2s;
+}
+
+
+/* Image Style */
+.skills-container img {
+    width: 500px;
+    height: auto;
+    
+    
+}
+
+#contact {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c1c1c;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;   
+    font-size: 30px; 
+    margin: 30px;
+}
+.icon i{
+    color: white;
+}
+.icon:hover {
+    background-image: linear-gradient(to bottom right, grey, black); 
+}
+
+.icon:hover i {
+    color: white;
+    animation: shake 2s; 
+}
+
+@keyframes shake {
+    10%{
+        transform: scale(1.5);
+    }
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.up-arrow{
+display: flex;
+justify-content: center;
+margin: 50px;
+font-size: large;
+}
+
+html{
+    scroll-behavior: smooth;
+}
